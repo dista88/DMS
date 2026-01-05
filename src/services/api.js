@@ -6,6 +6,7 @@ console.log("Vite Env Check:", ENV_URL);
 const api = axios.create({
   baseURL: API_URL,
   headers: {
+    "ngrok-skip-browser-warning": "true",
     "Content-Type": "application/json",
   },
 });
